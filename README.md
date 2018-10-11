@@ -1,22 +1,35 @@
-1.) react-fullstack-boilerplate
+# 1.) react-fullstack-boilerplate
 This is a boilerplate to build a full stack web application using React, Node.js, Express and Webpack. It is also configured with webpack-dev-server, eslint, prettier and babel. It is also connected to MongoDB, and a few test API's are written. Postman can be used to send data as POST calls.
 
-2.) Introduction
+# 2.) Introduction
 create-react-app is a quick way to get started with React development and it requires no build configuration. But it completely hides the build config which makes it difficult to extend. It also requires some additional work to integrate it with an existing Node.js/Express backend application.
 This is a simple full stack ReactJS application with a NodeJS server and Express templating at the backend. Client side code is written in ReactJS and the backend API's are written using ExpressJS. This application is configured with Airbnb's Eslint rules. and formatted through Prettier.
 
-3.) Development mode
+# 3.) Development mode
 In the development mode, we will have 2 servers running. We are using concurrently to make both the servers run simultaneously with the same build script. The front end code will be served by the webpack dev server which helps with hot and live reloading. The server side Express code will be served by a node server and we will be using nodemon which helps in automatically restarting the server whenever server side code changes.
 
-4.) Quick Start
+# 4.) Quick Start
+
 1.) Clone the repo git clone https://github.com/arvind-girish12/react-fullstack-boilerplate.git
+
 2.) Go inside the folder cd react-full-stack
+
 3.) Install dependencies npm install
+
 4.) Start the server npm run dev
-5.) Folder Structure The "src" file contains all the code. There are two folders inside. "client" is for all the client/frontend side code. And "server" server/backend side code. Inside "client" "Index.js" marks the start of the program code wise. It contains the provider where store is configured. The actions, components and reducers are also put in separate folders for convenience. Inside "server" "Index.js" is where the connection to the Mongodb is made. Also the routes are defined here too. The database is configured in the "config" folder. "controllers" is where all the functions for each API can be written. "models" contains the schema. "routes" contains all the routes. "views" can contain all the views incase any templating is required which will be handled with ExpressJS.
+
+5.) Folder Structure The "src" file contains all the code. There are two folders inside. "client" is for all the client/frontend side code. And "server" server/backend side code. 
+Inside "client" "Index.js" marks the start of the program code wise. It contains the provider where store is configured. The actions, components and reducers are also put in separate folders for convenience. 
+Inside "server" "Index.js" is where the connection to the Mongodb is made. Also the routes are defined here too. 
+The database is configured in the "config" folder. 
+"controllers" is where all the functions for each API can be written. 
+"models" contains the schema. "routes" contains all the routes. 
+"views" can contain all the views incase any templating is required which will be handled with ExpressJS.
+
 6.) Babel
 Babel helps us to write code according to the latest version of Javascript. If a certain environment does not support certain features natively, Babel will help us to compile those features down to a supported version. It also helps us to convert JSX to Javascript.
 ".babelrc file" is the file being used to describe the configurations required for Babel.
+
 7.) ESLint
 ESLint is a configurable linter tool for identifying and reporting certain patterns/mismatches in javascript.
 ".eslintrc.json" is the file being used to configure the linting rules being used. We are using the native rules handled by Airbnb ESLint.
